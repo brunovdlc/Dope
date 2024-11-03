@@ -948,28 +948,30 @@ main {
     padding-top: 2px; /* Ajuste esse valor se quiser mais espaço, se necessário */
 }
 
-/* Estilos do Rodapé Fixo */
+/* Estilos do Rodapé Fixo com Fundo Translúcido e Embaçado */
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
-    color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto translúcido */
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* Efeito de desfoque */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
 
 footer a {
-    color: #007bff;
+    color: #1e90ff;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
+
 
 </style>
 
@@ -1610,7 +1612,7 @@ var swiper = new Swiper(".swiper", {
 
     </script>
 <footer>
-    <p>&copy; 2024 @BrunoT. Todos os direitos reservados.</p>
+    <p>&copy; 2024  <a href="https://xatspace.store/" target="_blank">@BrunoT</a></p></p>
 </footer>
 
 
